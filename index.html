@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Your Trip</title>
+</head>
+
+<body>
+
+<!--------------- Header ---------------->
+<header class="header" id="top">
+<div class="container">
+    <ul class="header_navigation">
+        <li class="header-nav_item">
+            <a href="index.html" class="btn header-nav_link">
+                <div class="nav_text">About</div>
+            </a>
+        </li>
+
+        <li class="header-nav_item">
+            <a href="hot tours.html" class="btn header-nav_link">
+                <div class="nav_text">Hot tours</div>
+            </a>
+        </li>
+
+        <li class="header-nav_item">
+            <a href="special offers.html" class="btn header-nav_link">
+                <div class="nav_text">Special offers</div>
+            </a>
+        </li>
+
+        <li class="header-nav_item">
+            <a href="blog.html" class="btn header-nav_link">
+                <div class="nav_text">Blog</div>
+            </a>
+        </li>
+
+        <li class="header-nav_item">
+            <a href="contact.html" class="btn header-nav_link">
+                <div class="nav_text">Contacts</div>
+            </a>
+        </li>
+    </ul>
+</div>
+</header>
+<!---------------/ Header ---------------->
+
+
+<!--------------- Intro ---------------->
+<div class="intro">
+<div class="intro_cover">
+    <img src="img/img_London.jpg" alt="" class="intro_img intro_img--home active_cover">
+    <img src="img/img_Maldives.jpg" alt="" class="intro_img intro_img--home">
+    <img src="img/img_Venice.jpg" alt="" class="intro_img intro_img--home">
+</div>
+
+<div class="intro_inner">
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo_your_trip.png" alt="" class="logo_img">
+        </div>
+
+        <div class="tours_carousel">
+            <div class="tours_slider">
+                <div class="tour_item active_slide">
+                    <h1 class="tours_name">London</h1>
+
+                    <div class="tours_condition">
+                        from<br>
+                        <span>$1000</span>
+                    </div>
+                    
+                    <div class="tour_action">
+                        <a href="#" class="btn btn_intro">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="tour_item">
+                    <h1 class="tours_name">Maldives</h1>
+
+                    <div class="tours_condition">
+                        from<br>
+                        <span>$2000</span>
+                    </div>
+                    
+                    <div class="tour_action">
+                        <a href="#" class="btn btn_intro">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="tour_item">
+                    <h1 class="tours_name">Venice</h1>
+
+                    <div class="tours_condition">
+                        from<br>
+                        <span>$1600</span>
+                    </div>
+                    
+                    <div class="tour_action">
+                        <a href="#" class="btn btn_intro">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel_action">
+                <span class="slide_btn  slide_btn--prev">
+                    <img src="img/ico_prev.png" alt="" class="slide-btn_img">
+                </span>
+
+                <span class="slide_btn  slide_btn--next">
+                    <img src="img/ico_next.png" alt="" class="slide-btn_img">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!---------------/ Intro ---------------->
+
+
+<!--------------- Trips ---------------->
+<div class="trips">
+    <div class="container">
+        <div class="trip_inner">
+            <div class="trip_card">
+                <div class="card_cover">
+                    <img src="img/card_Barcelona.jpg" alt="" class="card_img">
+                </div>
+
+                <div class="card_info">
+                    <h2 class="trip_name">Barcelona</h2>
+
+                    <div class="trip_condition">
+                        from<br>
+                        <span>$1000</span>
+                    </div>
+                    
+                    <div class="trip_action">
+                        <a href="#" class="btn btn_trip">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip_card">
+                <div class="card_cover">
+                    <img src="img/card_GOA.jpg" alt="" class="card_img">
+                </div>
+
+                <div class="card_info">
+                    <h2 class="trip_name">Goa</h2>
+
+                    <div class="trip_condition">
+                        from<br>
+                        <span>$1500</span>
+                    </div>
+                    
+                    <div class="trip_action">
+                        <a href="#" class="btn btn_trip">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip_card">
+                <div class="card_cover">
+                    <img src="img/card_Paris.jpg" alt="" class="card_img">
+                </div>
+
+                <div class="card_info">
+                    <h2 class="trip_name">Paris</h2>
+
+                    <div class="trip_condition">
+                        from<br>
+                        <span>$1600</span>
+                    </div>
+                    
+                    <div class="trip_action">
+                        <a href="#" class="btn btn_trip">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------/ Trips ---------------->
+
+
+<!--------------- Main ---------------->
+<div class="main">
+<div class="container">
+    <div class="main_inner">
+        <div class="booking_form">
+            <h3 class="main_title">Booking form</h3>
+
+            <form class="form_ticket" action="/" method="post">
+                <div class="form_inner">
+                    <table class="form_info">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input class="input" type="text" placeholder="Name:">
+                                </td>
+
+                                <td>
+                                    <input class="input" type="email" placeholder="Email:">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input class="input" type="text" placeholder="Country:">
+                                </td>
+
+                                <td>
+                                    <input class="input" type="text" placeholder="Hotel:">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="form-block_dates">
+                        <div class="form_group">
+                            <label class="label" for="check_in">Check-in</label>
+
+                            <input class="input input--date" type="date" id="check_in" value="2014-05-10">
+                        </div>
+
+                        <div class="form_group">
+                            <label class="label" for="check_out">Check-out</label>
+
+                            <input class="input input--date" type="date" id="check_out" value="2014-05-20">
+                        </div>
+                    </div>
+
+                    <div class="menu_comfort">
+                        <div class="comfort_title">Comfort</div>
+
+                        <div class="comfort_choose">
+                            <button class="btn comfort_level" type="button" choise_comfort="true">
+                                <div class="choose_click">
+                                    <img src="img/ico_choose.png" alt="" class="ico_choose active_button_choose">
+                                </div>
+
+                                <div class="btn_name">Cheap</div>
+                            </button>
+
+                            <button class="btn comfort_level" type="button">
+                                <div class="choose_click">
+                                    <img src="img/ico_choose.png" alt="" class="ico_choose">
+                                </div>
+
+                                <div class="btn_name">Standart</div>
+                            </button>
+
+                            <button class="btn comfort_level" type="button">
+                                <div class="choose_click">
+                                    <img src="img/ico_choose.png" alt="" class="ico_choose">
+                                </div>
+
+                                <div class="btn_name">Lux</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form_message">
+                        <textarea class="textarea" name="input-text" id="input-text" placeholder="Message:"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn_main btn_main--form" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="main_other">
+            <div class="main_describing">
+                <h3 class="main_title">Welcome</h3>
+
+                <div class="describing_introduce">
+                    <div class="describing_cover">
+                        <img src="img/img_welcome.jpg" alt="" class="describing_img">
+                    </div>
+
+                    <div class="describing_info">
+                        <p class="describing_subtitle">Lorem ipsum dolor sit amet consectetur.
+                        </p>
+
+                        <p class="describing_subtitle">Ea aliquid, officiis earum quod facilis.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="describing_text">Lorem ipsum dolor sit amet <a href="#">consectetur</a>. Commodi labore quod earum.</p>
+
+                <p class="describing_text">Consectetur nemo odio, <a href="#">perferendis commodi laboriosam</a>. Reprehenderit quis unde dicta nulla.</p>
+
+                <p class="describing_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="reviews">
+                <h3 class="main_title  main_title--reviews">Clients' quotes</h3>
+
+                <div class="review_inner">
+                    <img src="img/photo_client.jpg" alt="" class="author_photo">
+
+                    <div class="review_info">
+                        <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, voluptatibus pariatur excepturi necessitatibus officiis ipsam dolorem.</p>
+
+                        <div class="author_name">Miranda Brown</div>
+                    </div>
+                </div>
+
+                <div class="reviews_more">
+                    <a href="#" class="btn btn_main">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!---------------/ Main ---------------->
+
+
+<!--------------- News ---------------->
+<div class="news">
+<div class="container">
+    <h3 class="main_title">Latest news</h3>
+
+    <div class="news_inner">
+        <div class="news_article">
+            <div class="news_info">
+                <div class="news-info_inner">
+                    <time class="article_date" datetime="2022-04-11">10<br><span>jan</span></time>
+
+                    <a href="#" class="article_chat">
+                        <img src="img/ico_chat.png" alt="" class="ico_chat">
+                    </a>
+                </div>
+            </div>
+
+            <div class="news_text">
+                <h4 class="article_title">News title1</h4>
+
+                <p class="article_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi ut minima nulla illum iste consequuntur maiores rerum ad dolor corrupti ex, fugiat sit soluta.</p>
+            </div>
+        </div>
+        
+        <div class="news_article">
+            <div class="news_info">
+                <div class="news-info_inner">
+                    <time class="article_date" datetime="2022-04-11">21<br><span>jan</span></time>
+
+                    <a href="#" class="article_chat">
+                        <img src="img/ico_chat.png" alt="" class="ico_chat">
+                    </a>
+                </div>
+            </div>
+
+            <div class="news_text">
+                <h4 class="article_title">News title2</h4>
+
+                <p class="article_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi ut minima nulla illum iste consequuntur maiores rerum ad dolor corrupti ex, fugiat sit soluta.</p>
+            </div>
+        </div>
+
+        <div class="news_article">
+            <div class="news_info">
+                <div class="news-info_inner">
+                    <time class="article_date" datetime="2022-04-11">15<br><span>feb</span></time>
+
+                    <a href="#" class="article_chat">
+                        <img src="img/ico_chat.png" alt="" class="ico_chat">
+                    </a>
+                </div>
+            </div>
+
+            <div class="news_text">
+                <h4 class="article_title">News title3</h4>
+
+                <p class="article_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi ut minima nulla illum iste consequuntur maiores rerum ad dolor corrupti ex, fugiat sit soluta.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!---------------/ News ---------------->
+
+
+<!--------------- Rise Up ---------------->
+<div class="rise_up">
+    <div class="container container--rise_up">
+        <a class="btn_toTop" href="#top">
+            <img src="img/ico_toTop.png" alt="" class="ico_toTop">
+        </a>
+    </div>
+</div>
+<!---------------/ Rise Up ---------------->
+
+
+<!--------------- Footer ---------------->
+<footer class="footer">
+<div class="container  container--footer">
+    <div class="footer_inner">
+        <div class="footer_text">
+            Your Trip (c) 2014  |  Privacy Policy | Website Template Designed by TemplateMonster.com  
+        </div>
+
+        <div class="footer_social">
+            <div class="social_item">
+                <a href="#" class="social_link">
+                    <img src="img/ico_fb.png" alt="" class="social_ico">
+                </a>
+            </div>
+
+            <div class="social_item">
+                <a href="#" class="social_link">
+                    <img src="img/ico_twit.png" alt="" class="social_ico">
+                </a>
+            </div>
+
+            <div class="social_item">
+                <a href="#" class="social_link">
+                    <img src="img/ico_google.png" alt="" class="social_ico">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!---------------/ Footer ---------------->
+
+
+
+<script src="app/app_carousel.js"></script>
+<script src="app/app_toTop.js"></script>
+<script src="app/app_chooseComfort.js"></script>
+</body>
+
+</html>

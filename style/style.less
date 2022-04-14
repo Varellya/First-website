@@ -1,0 +1,79 @@
+// compress: true
+
+@import "vars.less";
+@import "mixins.less";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @text-grey;
+}
+
+.rise_up {
+    padding-right: 8rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    &--footer {
+        position: relative;
+    }
+
+    &--rise_up {
+        position: relative;
+
+        max-width: 1125px;
+    }
+    
+    .breakpoint (@tablet, {
+        padding: 0 4rem;
+    });
+
+    .breakpoint (@mobile, {
+        padding: 0 1.5rem;
+    });
+}
+
+h1, h2, h3, h4, h5, h6, p, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+@import "blocks/btn.less";
+
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/trips.less";
+@import "blocks/main.less";
+@import "blocks/news.less";
+
+@import "blocks/hotTours.less";
+@import "blocks/specOffers.less";
+@import "blocks/blog.less";
+@import "blocks/contact.less";
+
+@import "blocks/footer.less";
+

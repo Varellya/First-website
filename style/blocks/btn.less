@@ -1,0 +1,160 @@
+// main: ../style.less
+
+.btn {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #433d45;
+    text-decoration: none;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn_intro {
+    position: relative;
+    
+    margin: auto;
+    padding: 1.4rem 4.5rem;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    background-color: @primary;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition: color .15s linear;
+
+    &:after {
+        .gradient;
+    }
+
+    &:hover {
+        color: @white;
+
+        &:after {
+            opacity: 0;
+        }
+    }
+    
+    .breakpoint (@tablet, {
+        padding: 1.4rem 3.5rem;
+    });
+    
+    .breakpoint (@mobile, {
+        padding: 1rem 2rem;
+
+        font-size: 1.2rem;
+    });
+}
+
+.btn_trip {
+    padding: 1rem 1.8rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #c73430;
+
+    background-color: @white;
+    border-radius: 20px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: @white;
+        background-color: @primary;
+    }
+
+    .breakpoint (@tablet, {
+        padding: .6rem 1.5rem;
+
+        font-size: 1.2rem;
+    });
+}
+
+.btn_main {
+    margin-left: auto;
+    padding: 1rem 2.5rem;
+
+    font-size: 1.4rem;
+    color: @text-grey;
+
+    background-color: #e5e5e5;
+    border-radius: 16px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: @white;
+        background-color: @primary;
+    }
+
+    &--form {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.btn_toTop {
+    position: absolute;
+    top: 5.2rem;
+    right: -4.8rem;
+    z-index: 1;
+
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    border: 2px solid #e76565;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: background-color .15s linear;
+
+    .ico_toTop {
+        margin: auto;
+    }
+
+    &:hover {
+        background-color: #e5e5e5;
+    }
+}
+
+.btn_offers,
+.btn_post,
+.btn_contact {
+    padding: .8rem 1.7rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #c73430;
+
+    background-color: #e5e5e5;
+    border-radius: 16px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: @white;
+        background-color: @primary;
+    }
+}
+
+.btn_contact {
+    margin-top: 3.5rem;
+    
+    text-transform: none;
+    color: @text-grey;
+
+    border-radius: 8px;
+}
+

@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.hotTours_inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+
+    .breakpoint (@mobile, {
+        flex-direction: column;
+    })
+}
+
+.hotTours_item {
+    width: 33.333%;
+
+    .breakpoint (@mobile, {
+        max-width: 100%;
+        margin: auto;
+    });
+}
+
+.hotTours_card {
+    position: relative;
+
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-1.2rem);
+
+        .card_cover:after {
+            background-color: rgba(@black, .5);
+        }
+    }
+
+    .breakpoint (@tablet, {
+        
+    });
+
+    .breakpoint (@mobile, {
+        margin: 0 auto 2rem;
+
+        &:last-child {
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+    });
+}
+
+
+
+
+
+

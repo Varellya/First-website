@@ -1,0 +1,379 @@
+// main: ../style.less
+
+.main {
+    margin-top: 7.5rem;
+    margin-bottom: 4.5rem;
+
+    .breakpoint (@mobile, {
+        margin-top: 2rem;
+    });
+}
+
+.main_inner {
+    display: flex;
+
+    width: 100%;
+
+    .breakpoint (@tablet, {
+        flex-direction: column-reverse;
+    });
+}
+
+.booking_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin-right: 125px;
+
+    .breakpoint (@tablet, {
+        margin: 0 auto;
+    });
+}
+
+.form_ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.main_title {
+    margin-bottom: 4.5rem;
+
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: @secondary;
+
+    &--reviews {
+        margin-bottom: 2.5rem;
+
+        font-size: 2.4rem;
+
+        .breakpoint (@mobile, {
+            margin-bottom: 4.5rem;
+        })
+    }
+
+    .breakpoint (@mobile, {
+        font-size: 2.2rem;
+
+        margin-bottom: 3rem;
+
+        &--reviews {
+            margin-bottom: 3rem;
+        }
+    })
+}
+
+.form_inner {
+    margin-bottom: 4rem;
+
+    .breakpoint (@mobile, {
+        margin-bottom: 2.2rem;
+    })
+}
+
+.form_info {
+    margin-right: -4.5rem;
+
+    .breakpoint (@mobile, {
+        tbody {
+            tr {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    })
+}
+
+.input {
+    width: 19.3rem;
+    height: 3rem;
+    margin: 0 4.5rem 1.5rem 0;
+    padding: 0;
+    padding-left: 1.5rem;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @text-grey;
+
+    background-color: #f0f3f5;
+    border: none;
+    outline: none;
+
+    &--date {
+        width: 33rem;
+        margin-right: 0;
+        padding: 0 2rem;
+    }
+
+    &:focus {
+        color: @black;
+        outline: 1px solid rgba(@black, .4);
+    }
+}
+
+.form-block_dates {
+    .breakpoint (@mobile, {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    })
+}
+
+.form_group {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    .breakpoint (@mobile, {
+        flex-direction: column;
+
+        .label {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .input--date {
+            width: auto;
+            margin-left: 0;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+    })
+}
+
+.label {
+    padding-bottom: 1.5rem;
+}
+
+.menu_comfort {
+
+    .breakpoint (@mobile, {
+        margin-bottom: 2rem;
+    })
+}
+
+.comfort_title {
+
+    .breakpoint (@mobile, {
+        margin-bottom: 0.5rem;
+    })
+}
+
+.comfort_choose {
+    display: flex;
+
+    .breakpoint (@mobile, {
+        flex-direction: column;
+    })
+}
+
+.comfort_level {
+    display: flex;
+
+    margin: 1.5rem 4.5rem 2rem 0;
+
+    cursor: auto;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .breakpoint (@mobile, {
+        margin: 0;
+        margin-top: .6rem;
+    })
+}
+
+.choose_click {
+    display: flex;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 1rem;
+
+    border: 3px solid #98a6b3;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.ico_choose {
+    display: none;
+
+    margin: auto;
+}
+
+.active_button_choose {
+    display: flex;
+}
+
+.btn_name {
+    margin: auto 0;
+    font-size: 1.4rem;
+    color: @text-grey;
+}
+
+.form_message {
+    display: flex;
+}
+
+.textarea {
+    width: 100%;
+    height: 14.5rem;
+    padding: 1.5rem 0 0 1.5rem;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @text-grey;
+
+    background-color: #f0f3f5;
+    resize: none;
+    border: none;
+    outline: none;
+
+    &:focus {
+        color: @black;
+        outline: 1px solid rgba(@black, .4);
+    }
+
+    .breakpoint (@mobile, {
+        padding: 1rem;
+    })
+}
+
+.main_other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .breakpoint (@tablet, {
+        flex-direction: row;
+    });
+
+    .breakpoint (@mobile, {
+        flex-direction: column;
+    });
+}
+
+.main_describing {
+    margin-bottom: 8rem;
+
+    .breakpoint (@mobile, {
+        margin-bottom: 5rem;
+    });
+}
+
+.describing_introduce {
+    display: flex;
+
+    margin-bottom: 3rem;
+
+    .breakpoint (@tablet, {
+        flex-direction: column;
+    });
+}
+
+.describing_cover {
+    width: 50%;
+
+    .breakpoint (@tablet, {
+        width: 100%;
+    });
+}
+
+.describing_img {
+    width: 100%;
+}
+
+.describing_info {
+    width: 50%;
+    padding-left: 1.5rem;
+
+    .breakpoint (@tablet, {
+        width: 100%;
+        padding-left: 0;
+    });
+}
+
+.describing_subtitle {
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.describing_text {
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: #f3aa29;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.reviews {
+
+    .breakpoint (@tablet, {
+        padding-left: 7rem;
+    });
+
+    .breakpoint (@mobile, {
+        margin-bottom: 5rem;
+        padding-left: 0;
+    });
+}
+
+.review_inner {
+    display: flex;
+
+    margin-bottom: 4rem;
+}
+
+.author_photo {
+    width: 90px;
+    height: 90px;
+}
+
+.review_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding-left: 2rem;
+}
+
+.author_name {
+    text-align: right;
+
+    line-height: 1;
+    text-transform: uppercase;
+    color: #f3aa29;
+
+    .breakpoint (@tablet, {
+        margin-top: 1.5rem;
+    });
+}
+
+.reviews_more {
+    display: flex;
+}
+

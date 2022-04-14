@@ -1,0 +1,214 @@
+// main: ../style.less
+
+.intro {
+    position: relative;
+    
+    &--other_pages {
+        height: 28rem;
+        margin-bottom: 12rem;
+
+        overflow: hidden;
+    }
+}
+
+.intro_cover {
+    display: flex;
+
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(@black, .5);
+    }
+}
+
+.intro_img {
+    display: flex;
+    
+    position: relative;
+    left: calc((100% - 1600px) / 2);
+
+    transition: opacity 1s linear;
+
+    &--home {
+        position: absolute;
+        
+        opacity: 0;
+    
+        .breakpoint (@tablet, {
+            height: 720px;
+        });
+    
+        .breakpoint (@mobile, {
+            height: 550px;
+
+            left: calc((100% - 1600px) / 2.5);
+        });
+    }
+}
+
+.active_cover {
+    position: relative;
+
+    opacity: 1;
+}
+
+.intro_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    padding-top: 13rem;
+
+    text-align: center;
+
+    .breakpoint (@tablet, {
+        padding-top: 11rem;
+    });
+
+    .breakpoint (@mobile, {
+        padding-top: 8rem;
+    });
+}
+
+.logo {
+    .breakpoint (@mobile, {
+        .logo_img {
+            width: 140px;
+        }
+    })
+}
+
+.tours_carousel {
+    position: relative;
+}
+
+.tours_slider {
+    position: relative;
+
+    margin-top: 13rem;
+
+    .breakpoint (@tablet, {
+        margin-top: 11rem;
+    });
+
+    .breakpoint (@mobile, {
+        margin-top: 6rem;
+    });
+}
+
+.tour_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    opacity: 0;
+
+    transition: opacity 1s linear;
+}
+
+.active_slide {
+    opacity: 1;
+    z-index: 10;
+}
+
+.tours_name {
+    margin-bottom: 3rem;
+
+    font-size: 7.2rem;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #f3aa29;
+
+    .breakpoint (@mobile, {
+        font-size: 5rem;
+    });
+}
+
+.tours_condition {
+    margin-bottom: 2.5rem;
+    
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #dad7d7;
+
+    span {
+        font-size: 4.8rem;
+    }
+
+    .breakpoint (@mobile, {
+        font-size: 1.8rem;
+
+        span {
+            font-size: 3.6rem;
+        }
+    });
+}
+
+.tour_action {
+    display: flex;
+}
+
+.carousel_action {
+    display: flex;
+
+    position: relative;
+    z-index: 100;
+}
+
+.slide_btn {
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+
+    display: flex;
+    
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #953941;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: background-color .2s linear;
+
+    &--prev {
+        left: 0;
+    }
+
+    &--next {
+        right: 0;
+    }
+
+    &:hover {
+        background-color: #953941;
+    }
+}
+
+.slide-btn_img {
+    width: 7px;
+    height: 11px;
+    margin: auto;
+}
+

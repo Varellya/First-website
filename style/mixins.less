@@ -1,0 +1,23 @@
+// main: style.less
+
+.gradient {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(rgba(@white, .15), transparent);
+    opacity: 1;
+
+    transition: opacity .15s linear;
+}
+
+.breakpoint (@bp, @content) {
+    @media screen and (max-width: @bp) {
+        @content();
+    }
+}
+

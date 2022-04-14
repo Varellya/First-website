@@ -1,0 +1,103 @@
+// main: ../style.less
+
+.footer {
+    margin-top: 12rem;
+
+    background-color: @secondary;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 32px 0;
+}
+
+.footer_text {
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #a3afba;
+
+    .breakpoint (@tablet, {
+        font-size: .8rem;
+        line-height: 1.4;
+    });
+
+    .breakpoint (@mobile, {
+        font-size: .6rem;
+    })
+}
+
+.footer_social {
+    display: flex;
+}
+
+.social_item {
+    display: flex;
+
+    position: relative;
+    
+    margin-right: 1.5rem;
+
+    background-color: #e24847;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: transform .1s linear;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:after {
+        .gradient;
+    }
+
+    &:hover {
+        transform: translate(3px, -3px);
+    }
+
+    .breakpoint (@tablet, {
+        margin-right: 2.2rem;
+    });
+
+    .breakpoint (@mobile, {
+        margin-right: 1.2rem;
+    })
+}
+
+.social_link {
+    display: flex;
+
+    position: relative;
+    z-index: 2;
+
+    width: 4rem;
+    height: 4rem;
+
+    .breakpoint (@tablet, {
+        width: 3.2rem;
+        height: 3.2rem;
+    });
+
+    .breakpoint (@mobile, {
+        width: 2.2rem;
+        height: 2.2rem;
+
+        border-radius: 1px;
+    })
+}
+
+.social_ico {
+    display: flex;
+
+    margin: auto;
+
+    .breakpoint (@mobile, {
+        height: 1rem;
+    })
+}
+

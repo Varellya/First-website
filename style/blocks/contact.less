@@ -1,0 +1,83 @@
+// main: ../style.less
+
+.contact_inner {
+    display: flex;
+}
+
+.contact_block {
+    width: 50%;
+    padding-right: 10rem;
+
+    &:last-child {
+        padding-right: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f3aa29;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.contact_title {
+    margin-bottom: 4rem;
+
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: @secondary;
+}
+
+.contact_text {
+    margin-bottom: 3rem;
+}
+
+.contact_geolaction {
+    display: flex;
+
+    max-height: 313px;
+
+    overflow: hidden;
+}
+
+.contact_info {
+    max-width: 50%;
+}
+
+.contact_adress {
+    margin: 3rem 0;
+}
+
+.contact-info_item {
+    margin-bottom: 8px;
+
+    line-height: 1;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact_form {
+    text-align: right;
+}
+
+.contact-form_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_contact {
+    width: 100%;
+    margin-right: 0;
+}
+
+.textarea_contact {
+    height: 29rem;
+    margin-top: 1rem;
+}
+

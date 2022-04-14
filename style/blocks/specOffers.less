@@ -1,0 +1,109 @@
+// main: ../style.less
+
+.specOffers_inner {
+    display: flex;
+}
+
+.specOffers_main {
+    width: 66.67%;
+}
+
+.specOffers_title {
+    margin-bottom: 2rem;
+
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: @secondary;
+
+    &--country {
+        margin-bottom: 3rem;
+
+        font-size: 2rem;
+    }
+}
+
+.specOffers_item {
+    display: flex;
+
+    margin-bottom: 22px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.specOffers_cover {
+    display: flex;
+
+    width: 300px;
+}
+
+.specOffers_description {
+    padding-left: 2rem;
+}
+
+.specOffers_name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #f3aa29;
+}
+
+.specOffers_text {
+    margin: 3rem 0 4rem;
+}
+
+.offersCountry {
+    width: 33.33%;
+    padding-left: 8rem;
+}
+
+.country_list {
+    max-height: 700px;
+    height: 390px;
+    margin: 0 0 4rem;
+    padding: 0;
+
+    list-style: none;
+
+    overflow-y: hidden;
+
+    transition: none;
+}
+
+.full_list {
+    height: 100%;
+    overflow-y: auto;
+
+    transition: height .5s linear;
+}
+
+.country_item {
+    display: flex;
+
+    margin-bottom: 1.3rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.ico-arrow_list {
+    height: 11px;
+    margin: auto 1.2rem auto 0;
+}
+
+.country_link {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: @text-grey;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
